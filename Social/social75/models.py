@@ -1,6 +1,5 @@
 from django.db import models
 from django.contrib.auth.models import User
-from tinymce.models import HTMLField
 
 class Habit(models.Model):
     name = models.CharField(max_length=100)  # Name of the habit
