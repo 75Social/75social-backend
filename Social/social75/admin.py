@@ -1,3 +1,4 @@
 from django.contrib import admin
+from .models import Habit  # Import your model
 
-# Register your models here.
+admin.site.register(Habit)  # Register your model
