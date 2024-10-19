@@ -6,5 +6,5 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('social75.urls')), 
-    path('post/', views.postData),  # Includes the helloworld app's URLs
+    path('post/', views.index),  # Includes the helloworld app's URLs
 ]
