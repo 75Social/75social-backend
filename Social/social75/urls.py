@@ -1,7 +1,7 @@
-from django.contrib import admin
-from django.urls import path, include
+from django.urls import path
+from . import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('api/', include('social75.urls')),  # Add your app's URLs
+    path('habits/', views.habit_list, name='habit_list'),  # List all habits
+    path('habits/<int:pk>/', views.habit_detail, name='habit_detail'),  # Detail of a specific habit
 ]
